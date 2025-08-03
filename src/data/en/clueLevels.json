@@ -1,0 +1,59 @@
+{
+  "levels": [
+    {
+      "id": "easy-1",
+      "difficulty": "easy",
+      "clue": "A large mammal with a trunk",
+      "solution": "ELEPHANT"
+    },
+    {
+      "id": "easy-2",
+      "difficulty": "easy",
+      "clue": "The star at the center of our solar system",
+      "solution": "SUN"
+    },
+    {
+      "id": "easy-3",
+      "difficulty": "easy",
+      "clue": "A red fruit often used in salads",
+      "solution": "TOMATO"
+    },
+    {
+      "id": "medium-1",
+      "difficulty": "medium",
+      "clue": "A device used to capture images",
+      "solution": "CAMERA"
+    },
+    {
+      "id": "medium-2",
+      "difficulty": "medium",
+      "clue": "The study of living organisms",
+      "solution": "BIOLOGY"
+    },
+    {
+      "id": "medium-3",
+      "difficulty": "medium",
+      "clue": "A musical instrument with black and white keys",
+      "solution": "PIANO"
+    },
+    {
+      "id": "hard-1",
+      "difficulty": "hard",
+      "clue": "The process by which plants make food using sunlight",
+      "solution": "PHOTOSYNTHESIS"
+    },
+    {
+      "id": "hard-2",
+      "difficulty": "hard",
+      "clue": "A person who studies ancient civilizations",
+      "solution": "ARCHAEOLOGIST"
+    },
+    {
+      "id": "hard-3",
+      "difficulty": "hard",
+      "clue": "The fear of confined spaces",
+      "solution": "CLAUSTROPHOBIA"
+    }
+  ]
+}
+

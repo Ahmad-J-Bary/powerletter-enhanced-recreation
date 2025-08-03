@@ -1,0 +1,59 @@
+{
+  "levels": [
+    {
+      "id": "easy-1",
+      "difficulty": "easy",
+      "clue": "حيوان كبير له خرطوم",
+      "solution": "فيل"
+    },
+    {
+      "id": "easy-2",
+      "difficulty": "easy",
+      "clue": "النجم في مركز نظامنا الشمسي",
+      "solution": "شمس"
+    },
+    {
+      "id": "easy-3",
+      "difficulty": "easy",
+      "clue": "فاكهة حمراء تستخدم في السلطات",
+      "solution": "طماطم"
+    },
+    {
+      "id": "medium-1",
+      "difficulty": "medium",
+      "clue": "جهاز يستخدم لالتقاط الصور",
+      "solution": "كاميرا"
+    },
+    {
+      "id": "medium-2",
+      "difficulty": "medium",
+      "clue": "علم دراسة الكائنات الحية",
+      "solution": "أحياء"
+    },
+    {
+      "id": "medium-3",
+      "difficulty": "medium",
+      "clue": "آلة موسيقية لها مفاتيح بيضاء وسوداء",
+      "solution": "بيانو"
+    },
+    {
+      "id": "hard-1",
+      "difficulty": "hard",
+      "clue": "العملية التي تصنع بها النباتات الطعام باستخدام ضوء الشمس",
+      "solution": "تمثيلضوئي"
+    },
+    {
+      "id": "hard-2",
+      "difficulty": "hard",
+      "clue": "شخص يدرس الحضارات القديمة",
+      "solution": "عالمآثار"
+    },
+    {
+      "id": "hard-3",
+      "difficulty": "hard",
+      "clue": "الخوف من الأماكن المغلقة",
+      "solution": "رهابالأماكنالمغلقة"
+    }
+  ]
+}
+
