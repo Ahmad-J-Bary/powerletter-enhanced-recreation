@@ -8,6 +8,7 @@ import LanguageSelector from './components/GameSetup/LanguageSelector'
 import GameModeSelector from './components/GameSetup/GameModeSelector'
 import TeamConfigurator from './components/GameSetup/TeamConfigurator'
 import GameTypeSelector from './components/GameScreens/GameTypeSelector'
+import ClueGameScreen from './components/GameScreens/ClueGame/ClueGameScreen'
 
 function App() {
   const { 
@@ -16,7 +17,8 @@ function App() {
     gameType, 
     teams, 
     gameStarted,
-    setGameStarted 
+    setGameStarted,
+    resetGame
   } = useGameMode()
 
   // Determine current setup step
@@ -32,6 +34,11 @@ function App() {
 
   const handleStartGame = () => {
     setGameStarted(true)
+  }
+
+  const handleBackToSetup = () => {
+    setGameStarted(false)
+    resetGame()
   }
 
   return (
@@ -103,21 +110,33 @@ function App() {
               )}
             </div>
           ) : (
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-                {language === 'ar' ? 'اللعبة قيد التطوير' : 'Game In Development'}
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
-                {language === 'ar' 
-                  ? 'سيتم إضافة واجهة اللعب في المرحلة التالية' 
-                  : 'Game interface will be added in the next phase'}
-              </p>
-              <button
-                onClick={() => setGameStarted(false)}
-                className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-200"
-              >
-                {language === 'ar' ? 'العودة للإعدادات' : 'Back to Setup'}
-              </button>
+            <div className="space-y-6">
+              {/* Back to Setup Button */}
+              <div className="text-center">
+                <button
+                  onClick={handleBackToSetup}
+                  className="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-200"
+                >
+                  {language === 'ar' ? 'العودة للإعدادات' : 'Back to Setup'}
+                </button>
+              </div>
+
+              {/* Game Screen */}
+              {gameType === 'clue-game' && <ClueGameScreen />}
+              
+              {/* Other game types would go here */}
+              {gameType !== 'clue-game' && (
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                  <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                    {language === 'ar' ? 'قريباً' : 'Coming Soon'}
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {language === 'ar' 
+                      ? 'هذا النوع من الألعاب قيد التطوير' 
+                      : 'This game type is under development'}
+                  </p>
+                </div>
+              )}
             </div>
           )}
         </main>
